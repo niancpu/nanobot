@@ -1,0 +1,17 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 Nanobot Start",
+            "type": "debugpy",           // 调试驱动名称
+            "request": "launch",         // 动作是“启动”
+            "module": "nanobot",         // 寻找 nanobot 包的入口 (相当于 python -m nanobot)
+            "args": [
+                "agent"                  // 传入的命令参数
+            ],
+            "console": "integratedTerminal", // 在 VS Code 自带的终端里显示输出
+            "justMyCode": true           // 只在你的代码里停下，不跳进 Python 库代码
+        }
+    ]
+}
